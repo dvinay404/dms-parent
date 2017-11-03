@@ -1,4 +1,4 @@
-package org.ap.dms.services;
+package org.ap.dms.services.impl;
 
 import java.util.List;
 
@@ -7,6 +7,7 @@ import javax.ejb.Stateful;
 
 import org.ap.dms.dao.DmsDao;
 import org.ap.dms.models.entity.DmsRequest;
+import org.ap.dms.services.DmsServices;
 
 @Stateful
 public class DmsServicesImpl implements DmsServices{
