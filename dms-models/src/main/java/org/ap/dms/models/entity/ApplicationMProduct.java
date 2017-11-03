@@ -24,12 +24,12 @@ public class ApplicationMProduct implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@SequenceGenerator(name = "productIdSequence", sequenceName = "productId_seq", allocationSize = 1, initialValue = 100000)
 	@Column(name = "PRODUCT_ID")
-	private String productId;
-	public String getProductId() {
+	private long productId;
+	public long getProductId() {
 		return productId;
 	}
 
-	public void setProductId(String productId) {
+	public void setProductId(long productId) {
 		this.productId = productId;
 	}
 
